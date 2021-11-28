@@ -1,0 +1,16 @@
+.leaflet-container {
+  height: 80vh;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.box-form {
+  width: 35%;
+  background-color: rgba(100, 148, 237, 0.171);
+}
+.box-map {
+  width: 65%;
+}
