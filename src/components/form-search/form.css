@@ -1,0 +1,70 @@
+.box-form {
+  padding: 2% 2%;
+  font-family: "Quicksand", sans-serif;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.form input {
+  width: 90%;
+  padding: 10px 5px;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.form input:focus {
+  outline: none;
+}
+.ul-search {
+  padding: 1rem;
+}
+.list-search {
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.137), -1px -3px 1px rgb(185, 188, 194);
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+}
+
+.list-search:hover {
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.678), -1px -3px 1px rgb(185, 188, 194);
+}
+.btn-submit {
+  padding: 5px 10px;
+  border: none;
+  margin: 5px;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(23, 23, 24);
+  cursor: pointer;
+}
+
+.btn_changeState {
+  padding: 10px;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: none;
+  color: dodgerblue;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+.btn_changeState::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: rgb(132, 209, 219);
+  left: 50%;
+  bottom: 0px;
+  transition: all 0.4s ease-in-out;
+}
+.btn_changeState:hover.btn_changeState::after {
+  width: 100%;
+  left: 0%;
+}

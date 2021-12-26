@@ -1,16 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .leaflet-container {
-  height: 80vh;
+  height: 500px;
   width: 100%;
 }
 .container {
+  background-color: rgba(99, 117, 109, 0.719);
+  padding: 2% 5%;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  min-width: 300px;
+}
+main {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 5%;
+  flex-wrap: wrap;
+}
+header {
+  width: 100%;
+}
+.container header h1 {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  background-color: rgb(182, 76, 76);
+  font-family: "Moo Lah Lah", cursive;
+}
+section {
+  padding: 1rem;
+  background-color: #1b1d1f;
+  color: white;
+  margin-bottom: 1rem;
+}
+section article {
+  margin: 0.8rem;
 }
 .box-form {
-  width: 35%;
-  background-color: rgba(100, 148, 237, 0.171);
+  width: 25%;
+  background-color: #ffffffc7;
+  height: 500px;
+  overflow: auto;
 }
 .box-map {
-  width: 65%;
+  width: 75%;
+  height: 500px;
+}
+@media screen and (max-width: 750px) {
+  .box-form {
+    width: 80%;
+    padding: 2rem !important;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+  .box-map {
+    width: 100%;
+  }
+
+  .box-form ul {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .box-form {
+    width: 90%;
+  }
 }
