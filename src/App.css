@@ -9,10 +9,10 @@
 }
 .container {
   background-color: rgba(99, 117, 109, 0.719);
-  padding: 2% 5%;
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   min-width: 300px;
+  padding-bottom: 2%;
 }
 main {
   position: relative;
@@ -20,6 +20,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 2% 5%;
 }
 header {
   width: 100%;
@@ -37,26 +38,42 @@ section {
   background-color: #1b1d1f;
   color: white;
   margin-bottom: 1rem;
+  border-radius: 0px 3px;
 }
 section article {
   margin: 0.8rem;
 }
+
 .box-form {
   width: 25%;
+  padding: 2%;
   background-color: #ffffffc7;
   height: 500px;
   overflow: auto;
 }
 .box-map {
   width: 75%;
-  height: 500px;
+  min-height: 500px;
+  height: 55vh;
+}
+@media screen and (max-width: 380px) {
+  .box-form {
+    width: 90%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .box-form {
+    width: 90%;
+    height: 360px;
+  }
 }
 @media screen and (max-width: 750px) {
   .box-form {
     width: 80%;
     padding: 2rem !important;
-    height: 300px;
     margin-bottom: 1rem;
+    border-radius: 3px;
   }
   .box-map {
     width: 100%;
@@ -65,9 +82,21 @@ section article {
   .box-form ul {
     height: 100%;
   }
+
+  .leaflet-container {
+    border-radius: 3px;
+  }
 }
-@media screen and (max-width: 380px) {
+
+@media screen and (min-width: 1440px) {
+  container {
+    min-height: 100vh;
+  }
+  .leaflet-container {
+    height: 100%;
+  }
+  .box-map,
   .box-form {
-    width: 90%;
+    height: 65vh;
   }
 }

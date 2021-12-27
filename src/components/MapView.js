@@ -57,7 +57,7 @@ export const MapView = () => {
           <CenterMap />
         </MapContainer>
       ) : (
-        <p>loading</p>
+        <p style={{ textAlign: "center", marginTop: "20%" }}> Esperando...</p>
       )}
     </>
   );

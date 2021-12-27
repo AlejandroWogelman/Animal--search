@@ -1,7 +1,3 @@
-.box-form {
-  padding: 2% 2%;
-  font-family: "Quicksand", sans-serif;
-}
 .form {
   display: flex;
   flex-direction: column;

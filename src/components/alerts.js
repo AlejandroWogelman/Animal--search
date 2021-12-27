@@ -4,7 +4,7 @@ import { getDatabase, ref, set } from "firebase/database";
 import { nanoid } from "nanoid";
 const MySwal = withReactContent(Swal);
 
-export const itsOK = () => {
+export const infoMarker = () => {
   return MySwal.fire(
     "Presione en el mapa para agregar referencia, sea lo más preciso posible."
   );
@@ -77,3 +77,19 @@ function writeUserData(latlng, text, selection) {
     time: time.toString(),
   });
 }
+
+export const deleteAlert = () => {
+  MySwal.fire({
+    title: "Exito",
+    text: "Marcador eliminado",
+    icon: "success",
+  });
+};
+
+export const errorAlert = () => {
+  MySwal.fire({
+    title: "Error",
+    text: "No se ha podido eliminar",
+    icon: "error",
+  });
+};
