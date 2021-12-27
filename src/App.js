@@ -1,5 +1,6 @@
 import "./App.css";
 import { welcome } from "./components/alerts";
+import { ChangeSateteBTN } from "./components/ChangeSateteBTN";
 import { FormSearch } from "./components/form-search/FormSearch";
 import { MapView } from "./components/MapView";
 
@@ -40,6 +41,7 @@ function App() {
           </p>
         </article>
       </section>
+      <ChangeSateteBTN />
       <main>
         <div className="box-form">
           <FormSearch />

@@ -69,10 +69,14 @@ section article {
   }
 }
 @media screen and (max-width: 750px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .box-form {
     width: 80%;
     padding: 2rem !important;
-    margin-bottom: 1rem;
+    margin: 1rem;
     border-radius: 3px;
   }
   .box-map {
